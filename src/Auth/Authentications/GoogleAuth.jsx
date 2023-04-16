@@ -23,11 +23,13 @@ const GoogleAuth = (props) => {
   };
 
   return (
-    <div className="google-auth" onClick={signInWithGoogle}>
-      <img src={Google} alt="Google" />
-      <div>Sign {props.text} with Google</div>
+     <>
+      <div className="google-auth" onClick={signInWithGoogle}>
+        <img src={Google} alt="Google" />
+        <div>Sign {props.text} with Google</div>
+      </div>
       {error && <h5>{error}</h5>}
-    </div>
+    </>
   );
 };
 
