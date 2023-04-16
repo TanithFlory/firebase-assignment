@@ -10,9 +10,11 @@ const App = () => {
 
     if (accessToken) {
       const decoded = JSON.parse(window.atob(accessToken.split(".")[1]));
-      const { name } = decoded;
-      setName(name);
-      setLogged(true);
+      const { name, exp } = decoded;
+      if (Date.now() < exp) {
+        setName(name);
+        setLogged(true);
+      }
     }
   }, []);
 
