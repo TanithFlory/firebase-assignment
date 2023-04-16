@@ -1,0 +1,48 @@
+.signup-wrapper {
+  margin: 5rem auto 1rem;
+  max-width: 400px;
+  & > div:first-child {
+    max-width: 350px;
+    width: 100%;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  & > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+}
+.google-auth {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: white;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  &:hover {
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  }
+  div {
+    background-color: #4285f4;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+  }
+}
+img {
+  height: 25px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  padding: 10px;
+}
+
+h5 {
+  margin: 10px 0 0;
+  color: red;
+}

@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  input,
+  input:focus {
+    padding: 1rem;
+  }
+}
+button {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
