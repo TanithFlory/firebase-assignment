@@ -11,7 +11,7 @@ const App = () => {
     if (accessToken) {
       const decoded = JSON.parse(window.atob(accessToken.split(".")[1]));
       const { name, exp } = decoded;
-      if (Date.now() < exp) {
+      if (Date.now() < exp*1000) {
         setName(name);
         setLogged(true);
       }
