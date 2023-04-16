@@ -16,6 +16,7 @@ const GoogleAuth = (props) => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const user = result.user;
         localStorage.setItem("accessToken", user.accessToken);
+        window.location.reload();
       })
       .catch((error) => {
         setError(error.message);
