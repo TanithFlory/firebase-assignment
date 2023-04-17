@@ -7,6 +7,8 @@ const Auth = () => {
     <>
       {toggle && <Login />}
       {!toggle && <Signup />}
+     <div>
+        <h3>{toggle?"Don't have an account?":"Already have an account?"}</h3>
       <button
         onClick={() =>
           setToggle((prevState) => {
@@ -16,6 +18,7 @@ const Auth = () => {
       >
         {toggle ? "Signup" : "Login"}
       </button>
+     </div>
     </>
   );
 };
