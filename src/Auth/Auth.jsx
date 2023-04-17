@@ -7,7 +7,7 @@ const Auth = () => {
     <>
       {toggle && <Login />}
       {!toggle && <Signup />}
-     <div>
+     <div className="toggle-auth">
         <h3>{toggle?"Don't have an account?":"Already have an account?"}</h3>
       <button
         onClick={() =>
